@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+	<title> Tiago Toledo Jr - Author, Programmer, Designer</title>
+	<meta charset="utf-8">
+
+	<!-- Font Import -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+
+	<!-- Icons Import -->
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+	<!-- Mailchimp Import -->
+	<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+
+	<!-- Bootstrap Import -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="http://getbootstrap.com.vn/examples/equal-height-columns/equal-height-columns.css" />
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  	<script>
+
+	  	// Changing navbar color
+	    $(document).ready(function(){
+	    	$(".navbar-fixed-top").css("background-color", "transparent");
+	    	$(window).scroll(function() { // check if scroll event happened
+	        	
+	        	if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
+	          		$(".navbar-fixed-top").css("background-color", "white"); 
+	        	} 
+
+	        	else {
+	          		$(".navbar-fixed-top").css("background-color", "transparent"); // if not, change it back to transparent
+	          		$(".navbar-fixed-top").css("font-color", "white");
+	        	}
+	      	});
+	    });
+
+  	</script>
+
+  	<style type="text/css">
+
+		#mc_embed_signup{
+			background:none; 
+			clear:left; 
+			font:14px Helvetica,Arial,sans-serif; w
+			idth:100%;
+		}
+
+  		/* Navbar related styles */
+  		.navbar-default{
+  			border: none;
+  			color:transparent;
+  			font-weight: bold;
+  			opacity: 0.8;
+  		}
+
+  		.nav a{
+  			font-size: 17px;
+  			font-family: Raleway, Helvetica, Arial, sans-serif;
+  		}
+
+  		/* Main website content styles */
+
+  		.gallery p{
+  			color: black;
+  			font-size: 3vh;
+  			padding: 0px;
+  			text-align: center;
+  		}
+
+  		.thumbnail img{
+  			width: 100%;
+  		}
+
+  		.image-container{
+		    position: absolute;
+
+		    top: 0;
+		    left: 0;
+		    bottom: 0;
+		    right: 0;
+
+		    background-image: url("images/top-background.jpg");
+		    background-repeat:no-repeat;
+		    background-size: cover;
+		    width:100%;
+		    
+  		}
+
+  		#Writing a > img {
+			border: solid 1px #cccccc;
+			height: 370px;
+		}
+
+		#Designs a > img {
+			border-color: solid 1px #cccccc;
+			height: 270px;
+		}
+
+  		/* Class that kills padding in order to glue two columns together */
+  		.kill-padding{
+  			padding: 0 !important;
+  			margin: 0 !important;
+  			border:1px !important;
+  			border-color:black !important;
+  		}
+
+  		.section-text{
+  			text-align: justify;
+  			font: white;
+  		}
+
+  		.white-background{
+  			background-color: white;
+  		}
+
+  		.gray-background{
+  			background-color: #EBEBEB;
+  		}
+
+  		#footer h1{
+  			color: white;
+  		}
+
+  		html, body { 
+  			overflow-x: hidden;
+  			background-color: white;
+  			padding: 0;
+  			margin: 0;
+  		}
+
+  		img {
+  			width: 100%; /* To match the image with text */
+  		}
+
+  		p {
+  			font-family: PT Sans, Georgia, Times, serif;
+  			color: black;
+			padding-bottom: 30px;
+  			padding-left: 89px;
+  			padding-right: 99px;
+  			font-size:3.3vh;
+  			text-align: justify;
+  		}
+
+  		h1 {
+  			font-family: Raleway, Helvetica, Arial, sans-serif;
+  			font-size: 5vh;
+  			padding: 60px 60px 5px 60px;
+  			text-align: center;
+  			color:black;
+  			font-weight: bold;
+  			text-decoration: underline;
+  		}
+
+  		h2 {
+  			font-family: Raleway, Helvetica, Arial, sans-serif;
+  			text-align: center;
+  			color:black;
+  		}
+
+  		h3 {
+  			font-family: Raleway, Helvetica, Arial, sans-serif;
+  			text-align: center;
+  			color:white;
+  			font-size: 3vh;
+  		}
+
+    </style>
+
+</head>
+
+<body> 
+	<div class="container.fluid">
+		<!-- The main title -->
+		<div style="margin:-30px; padding:25px; min-height:109.9vh; ">
+
+			<div class="image-container"></div>
+			<!-- Navigation Bar -->
+			<nav class="navbar navbar-fixed-top navbar-default" id="myNav">
+				<div class="container-fluid">
+			    	<div class="navbar-header">
+			      		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        		<span class="icon-bar"></span>
+			        		<span class="icon-bar"></span>
+			        		<span class="icon-bar"></span>
+			      		</button>
+			    </div>
+			    <div class="collapse navbar-collapse" id="myNavbar">
+			    	<ul class="nav navbar-nav">
+			        	<li><a href="#About">About Me</a></li>
+			        	<li><a href="#Writing">Writing</a></li>
+			        	<!--<li><a href="#Programming">Programming</a></li>-->
+			        	<li><a href="#Designs">Designs</a></li>
+			        	<li><a href="#Newsletter">Newsletter</a></li>
+			      	</ul>
+			      	<ul class="nav navbar-nav navbar-right">
+			      		<li><a target="_blank" href="https://www.linkedin.com/in/tiagotoledojr/"><span class="fab fa-linkedin-in"></span></a></li>
+			      		<li><a target="_blank" href="https://github.com/TNanukem"><span class="fab fa-github"></span></a></li>
+			      		<li><a target="_blank" href="https://medium.com/@tiagotoledojr"><span class="fab fa-medium-m"></span></a></li>
+			      		<li><a target="_blank" href="https://www.quora.com/profile/Tiago-Toledo-2"><span class="fab fa-quora"></span></a></li>
+			      		<li><a target="_blank" href="mailto:tiago.nanu@gmail.com"><span class="glyphicon glyphicon-envelope"></span></a></li>
+			      	</ul>
+			    </div>
+			  </div>
+			</nav>  
+
+			<!-- Welcome Text -->
+			<h1 class="text-center" style=" padding-top: 150px; color:white; position:relative; font-size: 8vh; text-align: center; text-decoration: none;"> TIAGO TOLEDO JR. </h1>
+		</div>
+
+		<!-- About Section -->
+		<div class="row row-eq-height kill-padding" id="About">
+			<div class="col-xs-12 white-background kill-padding section-text">
+				<p><h1 class="text-center">ABOUT ME</h1></p>
+				<p><img src="images/my-photo.jpg" class="img-rounded img-responsive center-block" style="max-width: 400px;"></p>
+				<p>
+					I am a Computer Engineering student at University of São Paulo. Self-taught writer and designer, I have a real passion for the areas of personal-development and productivity, subjects that are the main focus of my writing.
+				</p>
+				<p> 
+					This website is a project I made in order to relearn web development. It was enterely made using HTML 5, CSS 3, Bootstrap and JQuery. It has also been a challenge for me to make it beautiful since I have no previous background on design. I think I made a good work!
+				</p>
+				<p>
+					Here you are going to find some pieces of my writing and some of my programming, web design and graphical design projects. You can check you my social media accounts at the top and the bottom of the page. In case you want to contact me to discuss a business opportunity, feel free to send me an e-mail using the icon below or to send me a message on my social media accounts. 
+					<div class="text-center"><a target="_blank" href="mailto:tiago.nanu@gmail.com"><span class="glyphicon glyphicon-envelope" style="font-size: 5vw;"></span></a></div>
+				</p>
+
+			</div>
+		</div>
+
+		<!-- Writing Section -->
+		<div class="row row-eq-height kill-padding" id="Writing">
+			<div class="col-xs-12 gray-background kill-padding section-text">
+				<p>
+					<h1>MY WRITING</h1>
+				</p>
+				<p style="text-align: center;">
+					I have published articles and free and paid books. You can see some of the articles I am proud of right here.
+
+					<!-- Gallery Div -->
+					<div class="container gallery">
+
+						<!-- First row of the gallery -->
+						<div class="row">
+							<div class="col-md-6 col-xs-12"><div class="thumbnail">
+								<a target="_blank" href="https://medium.com/@tiagotoledojr/starting-your-journey-towards-personal-development-24e81624bb0d">
+									<img src="images/personal-development.jpeg">
+									<div class="caption"><p>Starting your journey towards personal development</p></div>
+								</a></div>
+							</div>
+
+							<div class="col-md-6 col-xs-12"><div class="thumbnail">
+								<a target="_blank" href="https://medium.com/@tiagotoledojr/we-need-to-talk-about-motivation-93c772351380">
+									<img src="images/motivation.jpeg" ">
+									<div class="caption"><p>We need to talk about motivation</p></div>
+								</a></div>
+							</div>
+						</div>
+
+						<!-- Second row of the gallery -->
+						<div class="row">
+							<div class="col-md-6 col-xs-12"><div class="thumbnail">
+								<a target="_blank" href="https://www.quora.com/What-are-5-habits-that-can-improve-my-life/answer/Tiago-Toledo-2">
+									<img src="images/5habits.jpg">
+									<div class="caption"><p>What are 5 habits that can improve my life? </p></div>
+								</a></div>
+							</div>
+
+							<div class="col-md-6 col-xs-12"><div class="thumbnail">
+								<a target="_blank" href="https://www.quora.com/How-can-I-have-more-energy-in-the-mornings/answer/Tiago-Toledo-2">
+									<img src="images/morning.png">
+									<div class="caption"><p>How can I have more energy in the mornings?</p></div>
+								</a></div>
+							</div>
+						</div>
+				</div>
+				</p>
+				<p style="text-align: center;"">
+					You can also see my <a target="_blank" href="https://medium.com/@tiagotoledojr">Medium</a> and <a target="_blank" href="https://www.quora.com/profile/Tiago-Toledo-2">Quora</a> profile. You are going to find most of my published work there.		
+			</div>
+		</div>
+
+		<!--
+		<div class="row row-eq-height kill-padding" id="Programming">
+			<div class="col-sm-6 hidden-xs white-background kill-padding"><img src="images/programming.jpg" class="text-center img-responsive"></div>
+			<div class="col-sm-6 col-xs-12 white-background kill-padding section-text">
+				<p>
+					<h1>PROGRAMMING</h1>
+				</p>
+				<p>
+					I have experience with the following programming languages: C, Java and Python.
+					
+				</p>
+			</div>
+		</div>
+		-->
+
+		<!-- Graphical Design Section -->
+		<div class="row row-eq-height kill-padding" id="Designs"">
+			<div class="col-sm-12 kill-padding section-text white-background">
+				<h1>DESIGNS</h1>
+
+				<p>
+					I make illustrations on Illustrator as shown on the first row of the gallery below.
+				</p> 
+				<p>
+					I also do vectorization of drawings, as shown on the second row. The drawings were made by my good friend <a href="https://www.facebook.com/profile.php?id=100000532498380">Lucas.</a>
+				</p>
+				
+				<!-- Gallery Div -->
+				<div class="container gallery" style="padding-bottom: 40px;">
+
+						<!-- First row of the gallery -->
+						<div class="row">
+							<div class="col-md-4 col-xs-12"><div class="thumbnail">
+								<a href="images/floating-island.png">
+									<img src="images/floating-island.png">
+									<div class="caption"><p>A tutorial-based floating island made on Illustrator</p></div>
+								</a></div>
+							</div>
+
+							<div class="col-md-4 col-xs-12"><div class="thumbnail">
+								<a href="images/hippie-van.png">
+									<img src="images/hippie-van.png" ">
+									<div class="caption"><p>A tutorial-based hippie van made on Illustrator</p></div>
+								</a></div>
+							</div>
+
+							<div class="col-md-4 col-xs-12"><div class="thumbnail">
+								<a href="images/wallpaper-landscape.png">
+									<img src="images/wallpaper-landscape.png">
+									<div class="caption"><p>A landscape wallpaper made on Photoshop</p></div>
+								</a></div>
+							</div>
+						</div>
+
+						<!-- Second row of the gallery -->
+						<div class="row">
+							<div class="col-md-4 col-xs-12"><div class="thumbnail">
+								<a href="images/lion.png">
+									<img src="images/lion.png">
+									<div class="caption"><p>Vectorization of a lion</p></div>
+								</a></div>
+							</div>
+
+							<div class="col-md-4 col-xs-12"><div class="thumbnail">
+								<a href="images/monkey.png">
+									<img src="images/monkey.png">
+									<div class="caption"><p>Vectorization of a monkey</p></div>
+								</a></div>
+							</div>
+
+							<div class="col-md-4 col-xs-12"><div class="thumbnail">
+								<a href="images/crow.png">
+									<img src="images/crow.png">
+									<div class="caption"><p>Vectorization of a crow</p></div>
+								</a></div>
+							</div>
+						</div>
+				</div>
+			</div>
+	
+		</div>
+
+		<!-- Newsletter -->
+		<div class="row" style="text-align: center;" id="Newsletter">
+			<div class="col-xs-12 kill-padding" style="background-color: #1F1F1F;">
+				<h1 style="color:white; text-decoration: none"> Subscribe to my newsletter </h1>
+				<h3 style="color:white; text-decoration: none"> Receive a weekly e-mail with my recommendations </h3>
+				<p>
+					<!-- Begin MailChimp Signup Form -->
+					<div id="mc_embed_signup">
+						<form action="https://imperiodosucesso.us17.list-manage.com/subscribe/post?u=e02356a3644a3c5e24f5e63ff&amp;id=1104d23324" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						    <div id="mc_embed_signup_scroll">
+							
+							<input style= "width: 20vw; padding: 10px;" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email Address" required>
+						    
+						    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e02356a3644a3c5e24f5e63ff_1104d23324" tabindex="-1" value=""></div>
+						    <br><br>
+						    <div class="clear"><input style="width: 20vw;" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success"></div>
+						    </div>
+						</form>
+					</div>
+					<!--End mc_embed_signup-->
+				</p>
+				<p></p>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<div class="container-fluid">
+			<div class="row row-eq-height" id="footer" style="text-align: center;">
+				<div class="col-xs-12 kill-padding" style="background-color: rgb(255,255,255) !important;">
+
+					<!-- Social Media Buttons -->
+				    <a target="_blank" href="https://www.linkedin.com/in/tiagotoledojr/"><span class="fab fa-linkedin-in" style="font-size:30px; padding: 15px;"></span></a>
+				    <a target="_blank" href="https://github.com/TNanukem"><span class="fab fa-github" style="font-size:30px; padding: 15px;"></span></a>
+				    <a target="_blank" href="https://medium.com/@tiagotoledojr"><span class="fab fa-medium-m" style="font-size:30px; padding: 15px;"></span></a>
+				    <a target="_blank" href="https://www.quora.com/profile/Tiago-Toledo-2"><span class="fab fa-quora" style="font-size:30px; padding: 15px;"></span></a>
+				    <a target="_blank" href="mailto:tiago.nanu@gmail.com"><span class="glyphicon glyphicon-envelope" style="font-size:30px; padding: 15px;"></span></a>
+
+				    <p style="color:rgb(51,122,183); font-size:2vh; text-align: center"> © 2018 Tiago Toledo Junior </p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	
+</body>
+</html>
